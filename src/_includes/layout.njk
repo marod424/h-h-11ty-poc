@@ -1,0 +1,56 @@
+---
+title: h+h - 11ty POC
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/bundle.css">
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/">hearts+homes</a>
+            </div>
+
+            <nav>
+                <p>About</p>
+                <ul>
+                    <li><a href="/story">Our Story</a></li>
+                    <li><a href="/purpose">Our Purpose</a></li>
+                    <li><a href="/team">Our Team</a></li>
+                    <li><a href="/partners">Our Partners</a></li>
+                </ul>
+
+                <p>Donate</p>
+                <ul>
+                    <li><a href="/funding">Your Gifts</a></li>
+                    <li><a href="/time">Your Time</a></li>
+                    <li><a href="/furnishing">Your Furniture</a></li>
+                </ul>
+
+                <p>Gallery</p>
+                <ul>
+                    <li><a href="/gallery">Installations</a></li>
+                    <li><a href="/gallery">Reveals</a></li>
+                    <li><a href="/gallery">Volunteers</a></li>
+                </ul>
+
+                <p><a href="/contact">Contact</a></p>
+            </nav>
+        </header>
+
+        <main>
+            {{ content | safe }}
+        </main>
+
+        <footer>
+            <a class="btn" href="/time">Donate Time</a>
+            <a class="btn" href="/furnishing">Donate Furnishings</a>
+            <a class="btn" href="/funding">Donate Funding</a>
+        </footer>
+    </body>
+</html>

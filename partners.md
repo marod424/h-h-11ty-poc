@@ -1,1 +1,0 @@
-<pre>TODO: Partners</pre>

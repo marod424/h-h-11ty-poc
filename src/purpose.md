@@ -1,3 +1,8 @@
+---
+layout: layout.njk
+title: h+h - purpose
+---
+
 Our Purpose
 
 hearts+homes is a faith-based, volunteer-led, care ministry that lovingly furnishes fresh starts for special-circumstance families. We receive and share gently used, donated furniture and home goods at no cost to those we serve, which is exclusively: 

@@ -1,3 +1,8 @@
+---
+layout: layout.njk
+title: h+h - team
+---
+
 Our Team
 
 hearts+homes is proud to be 100% volunteer led and driven. We are blessed with a core team of approximately 35 regularly engaged volunteers with another 15+ volunteers who engage more occasionally. We are led by a committed and actively involved Board of Directors. Each Director serves on volunteer teams with the ministry in addition to the time he or she donates to Board activities, so they all have a boots-on-the-ground perspective of ministry operations. 

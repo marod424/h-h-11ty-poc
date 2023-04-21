@@ -1,3 +1,8 @@
+---
+layout: layout.njk
+title: h+h - story
+---
+
 Our Story
 
 In 2018 God placed an idea in my mind and dream in my heart. He often uses life’s challenges to grow us, so it came as no surprise that this idea blossomed after a season of deep sadness. I had lost both of my parents in just over a year. With those losses came grief, transition, and the daunting task of sorting through mountains of memories as my siblings and I closed up my parents’ home.

@@ -1,6 +1,11 @@
 module.exports = function(eleventyConfig) {
-  // Output directory: _site
+  eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/bundle.css");
 
-  // Copy `img/` to `_site/img`
-  eleventyConfig.addPassthroughCopy("img");
+  return {
+    dir: {
+      input: "src",
+      output: "dist"
+    }
+  }
 };

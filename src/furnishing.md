@@ -1,3 +1,8 @@
+---
+layout: layout.njk
+title: h+h - furnishings
+---
+
 FURNITURE DONATIONS
 heartsandhomes@princetonalliance.org 
 
