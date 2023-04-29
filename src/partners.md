@@ -3,6 +3,6 @@ layout: layout.njk
 title: h+h - partners
 ---
 
-Our Partners
+## Our Partners
 
 stay tuned...

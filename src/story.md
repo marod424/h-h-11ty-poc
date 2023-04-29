@@ -3,7 +3,7 @@ layout: layout.njk
 title: h+h - story
 ---
 
-Our Story
+## Our Story
 
 In 2018 God placed an idea in my mind and dream in my heart. He often uses life’s challenges to grow us, so it came as no surprise that this idea blossomed after a season of deep sadness. I had lost both of my parents in just over a year. With those losses came grief, transition, and the daunting task of sorting through mountains of memories as my siblings and I closed up my parents’ home.
 
@@ -13,26 +13,26 @@ That’s when God spoke. He laid out a plan for helping people who would like to
 
 As the plan developed, five core values emerged:
 
-Service––We put others first and make their needs our priority. (Mark 10:45)
-Compassion––We listen with our heart and respond with kindness and care. 
-(Galatians 6:2)
-Generosity–We share what God provides and boldly give our best with joy and thoughtfulness. (2 Corinthians 9:7)
-Respect–We elevate the dignity of others because each person is uniquely and purposefully created by God. (Ephesians 2:10)
-Quality–We complete all tasks with excellence and place nothing in another’s home that we wouldn’t place in our own home. (Philippians 4:8)
+- <em><b>Service</b></em> – We put others first and make their needs our priority. (Mark 10:45)
+- <em><b>Compassion</b></em> – We listen with our heart and respond with kindness and care. (Galatians 6:2)
+- <em><b>Generosity</b></em> – We share what God provides and boldly give our best with joy and thoughtfulness. (2 Corinthians 9:7)
+- <em><b>Respect</b></em> – We elevate the dignity of others because each person is uniquely and purposefully created by God. (Ephesians 2:10)
+- <em><b>Quality</b></em> – We complete all tasks with excellence and place nothing in another’s home that we wouldn’t place in our own home. (Philippians 4:8)
 
 Early on I shared the ministry concept with three close friends and invited them to pray with me about next steps. And then I wrestled with the dream for a while. I laid questions before God, and He methodically answered. I must’ve asked Him, “Seriously? Are you sure?” at least a hundred times. Strangely, I didn’t know how it would all come together, but I had an unusual confidence that it would.
 
-And then in March 2020 the world stopped. 
+And then in March 2020 the world stopped.
 
-With a global pandemic and nationwide shutdown, I thought this ministry would be indefinitely back-burnered. But one June day, at the most unlikely of times, a single text from Princeton Alliance Church set everything in motion. The church offered to “incubate” hearts+homes with the intent of launching it as an independent non-profit. They offered a location, storage, upcycling space, guidance, support, resourcing, and accountability. I was stunned. Humbled. Grateful. And there was no excuse for not moving forward. 
+With a global pandemic and nationwide shutdown, I thought this ministry would be indefinitely back-burnered. But one June day, at the most unlikely of times, a single text from Princeton Alliance Church set everything in motion. The church offered to “incubate” hearts+homes with the intent of launching it as an independent non-profit. They offered a location, storage, upcycling space, guidance, support, resourcing, and accountability. I was stunned. Humbled. Grateful. And there was no excuse for not moving forward.
 
 Within weeks, we announced hearts+homes to the church staff and soft-launched this new, Spirit-led, volunteer-driven ministry. We put health and safety measures in place. We started improving the initial model using real-life client interactions as our training ground. Church family members volunteered their time and skills (now 50 strong). Partnerships were forged with local advocacy groups. Families felt the love, care, and hope that only Jesus can provide. As we outgrew our space not once, not twice, but five times, we boldly prayed for a space of our own to explore God’s next steps for the ministry. In July of 2022, we learned our new home would be 30 N. Main Street in Cranbury.
 
-The mission of the ministry is a big order.
-But we serve a big God. 
+The mission of the ministry is a big order.  
+But we serve a big God.  
 Trust Him with your dreams... especially the big ones.
 
 
+-- signature --
+
 Kristen Bowen  
--- signature --  
 Founder, Executive Director
