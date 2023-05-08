@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: h+h - funding
+title: Furnishing Fresh Starts - Donate funds to hearts+homes
 ---
 
 more to come...

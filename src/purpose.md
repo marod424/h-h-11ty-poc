@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
-title: h+h - purpose
+title: Furnishing Fresh Starts - About hearts+homes
+description: hearts+homes is a faith-based ministry that provides free, gently used furniture and home goods to special-circumstance families, such as underemployed single moms, individuals and families emerging from crises, and refugees approved to settle in New Jersey's Mercer and Middlesex counties. The organization partners with local advocacy organizations to provide holistic care, including social workers, pastors, case managers, and benevolence care providers. hearts+homes offers doorstep deliveries of single pieces of furniture and full installations of 1-3 bedroom dwellings, carefully coordinated to match and meet the family's specific needs. The organization does not discriminate based on ethnicity, nationality, place of origin, gender, religion, sexual orientation, marital status, familial status, economic status, age, or cognitive or physical ability.
 ---
 
 ## Our Purpose

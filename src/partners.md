@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: h+h - partners
+title: Furnishing Fresh Starts - Partners of hearts+homes
 ---
 
 ## Our Partners

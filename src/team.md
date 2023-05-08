@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
-title: h+h - team
+title: Furnishing Fresh Starts - The hearts+homes team
+description: Get to know the hearts+homes team - a group of dedicated volunteers and board members who are passionate about serving families in need. Meet our leaders and learn about their skills, experience, and spiritual gifts that make hearts+homes' ministry possible.
 ---
 
 ## Our Team

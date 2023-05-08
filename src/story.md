@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
-title: h+h - story
+title: Furnishing Fresh Starts - The story of hearts+homes
+description: hearts+homes is a non-profit organization that helps people who would like to share their belongings with families in need. The mission is to "furnish fresh starts" by serving the spiritual and practical needs of both those who give and those who receive. Read the inspiring story of how hearts+homes came to be, with underlying core values of Service, Compassion, Generosity, Respect, and Quality.
 ---
 
 ## Our Story

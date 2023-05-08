@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
-title: h+h - volunteer
+title: Furnishing Fresh Starts - Serve with hearts+homes
+description: Join hearts+homes' 100% volunteer-driven ministry and serve special-circumstance families in need. As a Christ-centered organization, we aim to meet both spiritual and practical needs by providing free, gently used furnishings. Discover how you can use your gifts and life experiences to make a difference as part of our Ministry Services, Upcycle, Special Services, Load-in, Home-Visit, or Utility Players teams. No prior experience is necessary, and we welcome anyone who shares our core values of Service, Compassion, Generosity, Respect, and Quality
 ---
 
 ## Opportunities to Serve

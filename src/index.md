@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
-title: hearts+homes
+title: Furnishing Fresh Starts
+description: Providing fresh starts for special-circumstance families in New Jersey's Middlesex, Mercer, Monmouth, and Ocean counties. hearts+homes is a vibrant, faith-based ministry that furnishes homes for underemployed single moms, families emerging from crises, and refugees. Donate today and help make a difference!
 ---
 
 hearts+homes is a PAC partner that furnishes fresh starts for special-circumstance families in New Jersey’s Middlesex, Mercer, Monmouth, and Ocean counties. This vibrant, faith-based ministry provides for the furnishing needs of underemployed single moms, families emerging from crises (such as homelessness and domestic violence), and refugees approved to settle in Central Jersey.

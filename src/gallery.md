@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: h+h - gallery
+title: Furnishing Fresh Starts - View the hearts+homes gallery
 ---
 
 nothing to see here, move along

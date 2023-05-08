@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
-title: h+h - furnishings
+title: Furnishing Fresh Starts - Donate furniture to hearts+homes
+description: Donate gently used furnishings, home goods, and decorator items to hearts+homes, a ministry of Princeton Alliance Church that provides furniture to qualified families in need. Learn about our donation guidelines and contact us to schedule a curbside pick-up.
 ---
 
 ## Furniture Donations
