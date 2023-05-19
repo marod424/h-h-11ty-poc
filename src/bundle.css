@@ -46,8 +46,30 @@ table {
 /* H+H Custom Design */
 
 
+:root {
+	/* color palette */
+	--light-color: #fdfcfb;
+	--dark-color: #23232a;
+	--primary-color: #7474c1;
+	--primary-color-darken: #6262b2;
+	--primary-color-darken-2x: #535393;
+	--secondary-color: #ae6fae;
+	--secondary-color-darken: #9f609f;
+	--secondary-color-darken-2x: #7f537f;
+	--accent-color: #d9e7ca;
+
+	/* sizing */
+	--header-height: 48px;
+	--footer-height: 48px;
+	--layout-margin: 32px;
+	--layout-padding: 16px;
+}
+
+
 body {
 	font-family: Calibri, sans-serif;
+	background-color: var(--light-color);
+	color: var(--dark-color);
 }
 
 p {
@@ -55,24 +77,24 @@ p {
 }
 
 h2 {
-	color: #7474c1;
+	color: var(--primary-color);
 	font-size: 24px;
 	font-weight: 700;
 }
 
 h4 {
-	color: #7474c1;
+	color: var(--primary-color);
 	font-size: 18px;
 	font-weight: 700;
 }
 
 h5 {
-	color: #7474c1;
+	color: var(--primary-color);
 	font-weight: 700;
 }
 
 em {
-	color: #7474c1;
+	color: var(--primary-color);
 }
 
 b {
@@ -98,18 +120,67 @@ li {
 }
 
 .btn {
-	border: 1px solid black;
 	border-radius: 3px;
 	padding: 8px 16px;
 	text-decoration: none;
 }
 
-.btn:hover {
+.btn:visited {
+	color: inherit;
+}
+
+.btn:hover,
+.btn:focus {
+	color: var(--primary-color-darken);
+}
+
+.btn:focus-visible {
+	outline: 2px solid var(--primary-color-darken);
+}
+
+.btn.primary {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.btn.primary:hover {
+	background-color: var(--primary-color-darken);
+}
+
+.btn.primary:active {
+	background-color: var(--primary-color-darken-2x);
+}
+
+.btn.secondary {
+	background-color: var(--secondary-color);
+	color: #fff;
+}
+
+.btn.secondary:hover {
+	background-color: var(--secondary-color-darken);
+}
+
+.btn.secondary:active {
+	background-color: var(--secondary-color-darken-2x);
+}
+
+.btn.secondary:focus-visible {
+	outline: 2px solid var(--secondary-color-darken);
+}
+
+.btn.tertiary:hover {
+	color: var(--dark-color);
+	background-color: var(--accent-color);
+}
+
+.btn.tertiary:active {
 	text-decoration: underline;
 }
 
-.btn:visited {
-	color: inherit;
+.btn.tertiary:focus-visible {
+	outline: 2px solid var(--dark-color);
+	background-color: var(--accent-color);
+	color: var(--dark-color);
 }
 
 .row {
@@ -129,12 +200,16 @@ li {
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 16px;
+	align-items: center;
+	height: var(--header-height);
+	padding: var(--layout-padding);
+	font-size: 18px;
 }
 
 header nav {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 16px;
 }
 
@@ -152,36 +227,62 @@ header nav .menu-group menu {
 	background: #fff;
 	border-radius: 4px;
 	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-	min-width: 100px;
+	min-width: 144px;
 }
 
-header nav .menu-group:hover menu {
+header nav .menu-group:hover menu,
+header nav .menu-group:focus-within menu {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
-	top: 16px;
+	top: 34px;
 	left: 0;
 	z-index: 1;
-}
-
-header nav .btn {
-	border: none;
-	padding: 0;
 }
 
 main {
 	display: flex;
 	flex-direction: column;
-	padding: 32px;
+	margin: var(--layout-margin);
 	gap: 16px;
-	min-height: calc(100vh - 178px);
+	min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--layout-margin) * 2 - var(--layout-padding) * 4);
 }
 
 footer {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 12px;
-	padding: 16px 0;
+	height: var(--footer-height);
+	padding: var(--layout-padding) 0;
+	font-size: 18px;
+}
+
+/* Responsive Breakpoints */
+
+/* Extra Small (XS) */
+@media only screen and (max-width: 576px) {
+  /* Insert CSS styles for XS screen sizes here */
+}
+
+/* Small (SM) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  /* Insert CSS styles for SM screen sizes here */
+}
+
+/* Medium (MD) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* Insert CSS styles for MD screen sizes here */
+}
+
+/* Large (LG) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* Insert CSS styles for LG screen sizes here */
+}
+
+/* Extra Large (XL) */
+@media only screen and (min-width: 1201px) {
+  /* Insert CSS styles for XL screen sizes here */
 }
