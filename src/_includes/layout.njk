@@ -19,9 +19,12 @@ description: hearts+homes
                 <a class="btn" href="/">hearts+homes</a>
             </div>
 
-            <nav>
+            <div id="nav-open-btn" class="btn trigger mobile" tabindex="0">☰</div>
+
+            <nav id="nav">
                 <div class="menu-group">
                     <div class="btn trigger" tabindex="0">About</div>
+                    <h5 class="label mobile">About</h5>
                     <menu>
                         <a class="btn" href="/story">Our Story</a>
                         <a class="btn" href="/purpose">Our Purpose</a>
@@ -32,6 +35,7 @@ description: hearts+homes
 
                 <div class="menu-group">
                     <div class="btn trigger" tabindex="0">Donate</div>
+                    <h5 class="label mobile">Donate</h5>
                     <menu>
                         <a class="btn" href="/funding">Your Gifts</a>
                         <a class="btn" href="/time">Your Time</a>
@@ -41,6 +45,7 @@ description: hearts+homes
 
                 <div class="menu-group">
                     <div class="btn trigger" tabindex="0">Gallery</div>
+                    <h5 class="label mobile">Gallery</h5>
                     <menu>
                         <a class="btn" href="/gallery">Installations</a>
                         <a class="btn" href="/gallery">Reveals</a>
@@ -50,6 +55,8 @@ description: hearts+homes
 
                 <a class="btn" href="/contact">Contact</a>
             </nav>
+
+            <div id="nav-close-btn" class="btn trigger mobile" tabindex="0">✕</div>
         </header>
 
         <main>
@@ -62,4 +69,6 @@ description: hearts+homes
             <a class="btn tertiary" href="/funding">Donate Funding</a>
         </footer>
     </body>
+
+    <script src="/bundle.js"></script>
 </html>

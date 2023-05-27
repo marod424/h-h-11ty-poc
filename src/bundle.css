@@ -71,6 +71,7 @@ body {
 	font-family: Calibri, sans-serif;
 	background-color: var(--light);
 	color: var(--dark);
+	font-size: 18px;
 }
 
 p {
@@ -222,6 +223,10 @@ header nav {
 	gap: 16px;
 }
 
+header nav .label.mobile {
+	display: none;
+}
+
 header nav .menu-group {
 	position: relative;
 }
@@ -254,6 +259,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	margin: var(--layout-margin) auto;
+	padding: 0 32px;
 	gap: 16px;
 	max-width: 1024px;
 	min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--layout-margin) * 2 - var(--layout-padding) * 4);
@@ -273,5 +279,73 @@ footer {
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
-	/* TODO: menu to mobile menu; add touch events */
+	header nav {
+		display: none;
+	}
+
+	header nav.mobile {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	header nav.mobile .label.mobile {
+		display: flex;
+	}
+
+	header nav.mobile.open {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 16px;
+		background: var(--white);
+		border-radius: 8px;
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+	}
+
+	header nav.mobile .menu-group {
+		display: flex;
+		flex-direction: column;
+	}
+
+	header nav.mobile .menu-group menu,
+	header nav.mobile .menu-group:hover menu,
+	header nav.mobile .menu-group:focus-within menu {
+		display: flex;
+		position: revert;
+		flex-direction: column;
+		gap: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	header nav.mobile .menu-group .btn.trigger {
+		cursor: initial;
+		font-size: 1.125em;
+	}
+
+	header .btn.trigger {
+		display: none;
+	}
+
+	header .btn.trigger.mobile {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		display: flex;
+		justify-content: center;
+		font-size: 24px;
+		width: 24px;
+		padding: 8px;
+		border-radius: 20px;
+		cursor: pointer;
+		user-select: none;
+		z-index: 1;
+	}
+
+	header .btn.trigger.mobile:hover {
+		background-color: var(--primary);
+		color: var(--white);
+	}
 }
