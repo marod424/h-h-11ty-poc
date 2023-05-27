@@ -48,15 +48,16 @@ table {
 
 :root {
 	/* color palette */
-	--light-color: #fdfcfb;
-	--dark-color: #23232a;
-	--primary-color: #7474c1;
-	--primary-color-darken: #6262b2;
-	--primary-color-darken-2x: #535393;
-	--secondary-color: #ae6fae;
-	--secondary-color-darken: #9f609f;
-	--secondary-color-darken-2x: #7f537f;
-	--accent-color: #d9e7ca;
+	--white: #fff;
+	--light: #fdfcfb;
+	--dark: #23232a;
+	--primary-light: #7474c1;
+	--primary: #6262b2;
+	--primary-dark: #535393;
+	--secondary-light: #ae6fae;
+	--secondary: #9f609f;
+	--secondary-dark: #7f537f;
+	--accent: #d9e7ca;
 
 	/* sizing */
 	--header-height: 48px;
@@ -68,33 +69,34 @@ table {
 
 body {
 	font-family: Calibri, sans-serif;
-	background-color: var(--light-color);
-	color: var(--dark-color);
+	background-color: var(--light);
+	color: var(--dark);
 }
 
 p {
-	line-height: 1.15;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 h2 {
-	color: var(--primary-color);
-	font-size: 24px;
+	color: var(--primary);
+	font-size: 1.5em;
 	font-weight: 700;
 }
 
 h4 {
-	color: var(--primary-color);
-	font-size: 18px;
+	color: var(--primary);
+	font-size: 1.125em;
 	font-weight: 700;
 }
 
 h5 {
-	color: var(--primary-color);
+	color: var(--primary);
 	font-weight: 700;
 }
 
 em {
-	color: var(--primary-color);
+	color: var(--primary);
 }
 
 b {
@@ -106,17 +108,17 @@ i {
 }
 
 q {
-	line-height: 1.15;
+	line-height: 1.5em;
 	font-style: italic;
 }
 
 ul {
-	padding-left: 32px;
+	padding-left: 2em;
 	list-style: inside;
 }
 
 li {
-	line-height: 1.15;
+	line-height: 1.5em;
 }
 
 .btn {
@@ -131,46 +133,46 @@ li {
 
 .btn:hover,
 .btn:focus {
-	color: var(--primary-color-darken);
+	color: var(--primary-dark);
 }
 
 .btn:focus-visible {
-	outline: 2px solid var(--primary-color-darken);
+	outline: 2px solid var(--primary);
 }
 
 .btn.primary {
-	background-color: var(--primary-color);
+	background-color: var(--primary);
 	color: #fff;
 }
 
 .btn.primary:hover {
-	background-color: var(--primary-color-darken);
+	background-color: var(--primary-dark);
 }
 
 .btn.primary:active {
-	background-color: var(--primary-color-darken-2x);
+	background-color: var(--primary-light);
 }
 
 .btn.secondary {
-	background-color: var(--secondary-color);
+	background-color: var(--secondary);
 	color: #fff;
 }
 
 .btn.secondary:hover {
-	background-color: var(--secondary-color-darken);
+	background-color: var(--secondary-dark);
 }
 
 .btn.secondary:active {
-	background-color: var(--secondary-color-darken-2x);
+	background-color: var(--secondary-light);
 }
 
 .btn.secondary:focus-visible {
-	outline: 2px solid var(--secondary-color-darken);
+	outline: 2px solid var(--secondary);
 }
 
 .btn.tertiary:hover {
-	color: var(--dark-color);
-	background-color: var(--accent-color);
+	color: var(--dark);
+	background-color: var(--accent);
 }
 
 .btn.tertiary:active {
@@ -178,14 +180,14 @@ li {
 }
 
 .btn.tertiary:focus-visible {
-	outline: 2px solid var(--dark-color);
-	background-color: var(--accent-color);
-	color: var(--dark-color);
+	outline: 2px solid var(--dark);
+	background-color: var(--accent);
+	color: var(--dark);
 }
 
 .row {
 	display: flex;
-	gap: 24px;
+	gap: 32px;
 	margin: 8px
 }
 
@@ -193,6 +195,13 @@ li {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+}
+
+.card {
+	background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 32px;
 }
 
 /* Layout */
@@ -224,7 +233,7 @@ header nav .menu-group .trigger {
 header nav .menu-group menu {
 	display: none;
 	padding: 8px;
-	background: #fff;
+	background: var(--white);
 	border-radius: 4px;
 	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 	min-width: 144px;
@@ -244,8 +253,9 @@ header nav .menu-group:focus-within menu {
 main {
 	display: flex;
 	flex-direction: column;
-	margin: var(--layout-margin);
+	margin: var(--layout-margin) auto;
 	gap: 16px;
+	max-width: 1024px;
 	min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--layout-margin) * 2 - var(--layout-padding) * 4);
 }
 
@@ -260,29 +270,8 @@ footer {
 	font-size: 18px;
 }
 
-/* Responsive Breakpoints */
+/* Mobile */
 
-/* Extra Small (XS) */
-@media only screen and (max-width: 576px) {
-  /* Insert CSS styles for XS screen sizes here */
-}
-
-/* Small (SM) */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  /* Insert CSS styles for SM screen sizes here */
-}
-
-/* Medium (MD) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  /* Insert CSS styles for MD screen sizes here */
-}
-
-/* Large (LG) */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  /* Insert CSS styles for LG screen sizes here */
-}
-
-/* Extra Large (XL) */
-@media only screen and (min-width: 1201px) {
-  /* Insert CSS styles for XL screen sizes here */
+@media only screen and (max-width: 768px) {
+	/* TODO: menu to mobile menu; add touch events */
 }

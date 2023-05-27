@@ -12,7 +12,7 @@ hearts+homes is a ministry of Princeton Alliance Church that specializes in “f
 If you’re interested in donating very gently used furnishings, home goods, or decorator items, email photos along with your location and timeframe to heartsandhomes@princetonalliance.org. We will reply within 48 hours of your contact, Monday–Friday. We are 100% volunteer led and volunteer driven, so thank you for your patience.
 
 <div class="row">
-    <div class="column">
+    <div class="column card">
         <b>We Can Consider</b>
         <ul>
            <li>Twin, full, queen, and bunk beds</li>
@@ -28,7 +28,7 @@ If you’re interested in donating very gently used furnishings, home goods, or 
            <li>Kitchenware (dish sets, glassware, bakeware, etc.)</li>
         </ul>
     </div>
-    <div class="column">
+    <div class="column card">
         <b>We Are Unable to Consider</b>
         <ul>
            <li>King beds, trundle beds, toddler beds, futons</li>

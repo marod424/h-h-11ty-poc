@@ -8,7 +8,7 @@ description: Get to know the hearts+homes team - a group of dedicated volunteers
 
 hearts+homes is proud to be 100% volunteer led and driven. We are blessed with a core team of approximately 35 regularly engaged volunteers with another 15+ volunteers who engage more occasionally. We are led by a committed and actively involved Board of Directors. Each Director serves on volunteer teams with the ministry in addition to the time he or she donates to Board activities, so they all have a boots-on-the-ground perspective of ministry operations.
 
-<div class="row">
+<div class="row card">
     <img src="/img/reeba_alexander.png" alt="Reeba Alexander head shot" width="175" height="175">
     <div class="column">
         <em><b>Reeba Alexander</b></em>
@@ -16,7 +16,7 @@ hearts+homes is proud to be 100% volunteer led and driven. We are blessed with a
     </div>
 </div>
 
-<div class="row">
+<div class="row card">
     <img src="/img/kristen_bowen.png" alt="Kristen Bowen head shot" width="175" height="175">
     <div class="column">
         <em><b>Kristen Bowen</b></em>
@@ -26,7 +26,7 @@ hearts+homes is proud to be 100% volunteer led and driven. We are blessed with a
     </div>
 </div>
 
-<div class="row">
+<div class="row card">
     <img src="/img/chuck_hopper.png" alt="Chuck Hopper head shot" width="175" height="175">
     <div class="column">
         <em><b>Chuck Hopper</b></em>
@@ -34,7 +34,7 @@ hearts+homes is proud to be 100% volunteer led and driven. We are blessed with a
     </div>
 </div>
 
-<div class="row">
+<div class="row card">
     <img src="/img/drew_idavory.png" alt="Drew Idavory head shot" width="175" height="175">
     <div class="column">
         <em><b>Drew Idavoy</b></em>
@@ -43,7 +43,7 @@ hearts+homes is proud to be 100% volunteer led and driven. We are blessed with a
     </div>
 </div>
 
-<div class="row">
+<div class="row card">
     <img src="/img/miriam_kamal.png" alt="Miriam Kamal head shot" width="175" height="175">
     <div class="column">
         <em><b>Miriam Kamal</b></em>
@@ -51,7 +51,7 @@ hearts+homes is proud to be 100% volunteer led and driven. We are blessed with a
     </div>
 </div>
 
-<div class="row">
+<div class="row card">
     <img src="/img/nilay_vashi.png" alt="Nilay Vashi head shot" width="175" height="175">
     <div class="column">
         <em><b>Nilay Vashi</b></em>
