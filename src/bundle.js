@@ -2,34 +2,40 @@
     'use strict';
 
     let nav = document.querySelector('#nav');
-    let navOpenBtn = document.querySelector('#nav-open-btn');
-    let navCloseBtn = document.querySelector('#nav-close-btn');
+    let openBtn = document.querySelector('#nav-open-btn');
+    let closeBtn = document.querySelector('#nav-close-btn');
+    let isMobile;
 
-    function handleNavOpenAction() {
-        navOpenBtn.style.display = 'none';
-        navCloseBtn.style.display = 'flex';
+    function openNav() {
+        openBtn.classList.remove('show');
+        closeBtn.classList.add('show');
         nav.classList.add('open');
     }
 
-    function handleNavCloseAction() {
-        navOpenBtn.style.display = 'flex';
-        navCloseBtn.style.display = 'none';
+    function closeNav() {
+        openBtn.classList.add('show');
+        closeBtn.classList.remove('show');
         nav.classList.remove('open');
     }
 
+    function setupEventListeners() {
+        openBtn.addEventListener('click', openNav);
+        closeBtn.addEventListener('click', closeNav);
+        openBtn.addEventListener('keypress', event => event.key === 'Enter' && openNav());
+        closeBtn.addEventListener('keypress', event => event.key === 'Enter' && closeNav());
+    }
+
     function handleResponsiveLayout() {
-        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+        const currentIsMobile = window.matchMedia('(max-width: 768px)').matches;
 
-        isMobile ? nav.classList.add('mobile') : nav.classList.remove('mobile');
-        navOpenBtn.style.display = isMobile ? 'flex' : 'none';
-        navCloseBtn.style.display = 'none';
+        if (currentIsMobile !== isMobile) {
+            isMobile = currentIsMobile;
 
-        navOpenBtn.addEventListener('click', handleNavOpenAction);
-        navCloseBtn.addEventListener('click', handleNavCloseAction);
-        navOpenBtn.addEventListener('touched', handleNavOpenAction);
-        navCloseBtn.addEventListener('touched', handleNavCloseAction);
-        navOpenBtn.addEventListener('keypress', event => event.key === 'Enter' && handleNavOpenAction());
-        navCloseBtn.addEventListener('keypress', event => event.key === 'Enter' && handleNavCloseAction());
+            isMobile ? nav.classList.add('mobile') : nav.classList.remove('mobile');
+            isMobile ? openBtn.classList.add('show') : openBtn.classList.remove('show');
+            closeBtn.classList.remove('show');
+            nav.classList.remove('open');
+        }
     }
 
     function debounce(func, wait) {
@@ -47,7 +53,11 @@
         }
     }
 
-    window.addEventListener('load', handleResponsiveLayout);
+    window.addEventListener('load', () => {
+        setupEventListeners();
+        handleResponsiveLayout();
+    });
+
     window.addEventListener('resize', debounce(handleResponsiveLayout, 300));
 }());
 
