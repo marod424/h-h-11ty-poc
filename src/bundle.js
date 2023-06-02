@@ -2,27 +2,18 @@
     'use strict';
 
     let nav = document.querySelector('#nav');
-    let openBtn = document.querySelector('#nav-open-btn');
-    let closeBtn = document.querySelector('#nav-close-btn');
+    let navToggle = document.querySelector('#nav-toggle');
+    let bars = document.querySelectorAll('#nav-toggle .bar');
     let isMobile;
 
-    function openNav() {
-        openBtn.classList.remove('show');
-        closeBtn.classList.add('show');
-        nav.classList.add('open');
-    }
-
-    function closeNav() {
-        openBtn.classList.add('show');
-        closeBtn.classList.remove('show');
-        nav.classList.remove('open');
+    function toggleNav() {
+        bars.forEach(bar => bar.classList.toggle('x'));
+        nav.classList.toggle('open');
     }
 
     function setupEventListeners() {
-        openBtn.addEventListener('click', openNav);
-        closeBtn.addEventListener('click', closeNav);
-        openBtn.addEventListener('keypress', event => event.key === 'Enter' && openNav());
-        closeBtn.addEventListener('keypress', event => event.key === 'Enter' && closeNav());
+        navToggle.addEventListener('click', toggleNav);
+        navToggle.addEventListener('keypress', event => event.key === 'Enter' && toggleNav());
     }
 
     function handleResponsiveLayout() {
@@ -30,10 +21,7 @@
 
         if (currentIsMobile !== isMobile) {
             isMobile = currentIsMobile;
-
             isMobile ? nav.classList.add('mobile') : nav.classList.remove('mobile');
-            isMobile ? openBtn.classList.add('show') : openBtn.classList.remove('show');
-            closeBtn.classList.remove('show');
             nav.classList.remove('open');
         }
     }
