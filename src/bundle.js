@@ -2,6 +2,7 @@
     'use strict';
 
     let nav = document.querySelector('#nav');
+    let navBtns = document.querySelectorAll('#nav .btn');
     let navToggle = document.querySelector('#nav-toggle');
     let bars = document.querySelectorAll('#nav-toggle .bar');
     let isMobile;
@@ -9,6 +10,7 @@
     function toggleNav() {
         bars.forEach(bar => bar.classList.toggle('x'));
         nav.classList.toggle('open');
+        navBtns.forEach(btn => btn.tabIndex = btn.tabIndex === 0 ? -1 : 0);
     }
 
     function setupEventListeners() {
@@ -23,6 +25,7 @@
             isMobile = currentIsMobile;
             isMobile ? nav.classList.add('mobile') : nav.classList.remove('mobile');
             nav.classList.remove('open');
+            navBtns.forEach(btn => btn.tabIndex = isMobile ? -1 : 0);
         }
     }
 
