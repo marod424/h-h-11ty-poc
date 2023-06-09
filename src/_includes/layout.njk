@@ -10,7 +10,7 @@ description: hearts+homes
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{{ description }}">
         <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'; base-uri 'self'; form-action 'self'" />
-        <link rel="stylesheet" href="/bundle.css">
+        <link rel="stylesheet" href="/style/index.css">
         <title>{{ title }}</title>
     </head>
     <body>
@@ -24,10 +24,10 @@ description: hearts+homes
                     <div class="btn trigger" tabindex="0">About</div>
                     <h5 class="label mobile">About</h5>
                     <menu>
-                        <a class="btn" href="/story">Our Story</a>
-                        <a class="btn" href="/purpose">Our Purpose</a>
-                        <a class="btn" href="/team">Our Team</a>
-                        <a class="btn" href="/partners">Our Partners</a>
+                        <a class="btn" href="/about/story">Our Story</a>
+                        <a class="btn" href="/about/purpose">Our Purpose</a>
+                        <a class="btn" href="/about/team">Our Team</a>
+                        <a class="btn" href="/about/partners">Our Partners</a>
                     </menu>
                 </div>
 
@@ -35,9 +35,9 @@ description: hearts+homes
                     <div class="btn trigger" tabindex="0">Donate</div>
                     <h5 class="label mobile">Donate</h5>
                     <menu>
-                        <a class="btn" href="/funding">Your Gifts</a>
-                        <a class="btn" href="/time">Your Time</a>
-                        <a class="btn" href="/furnishing">Your Furniture</a>
+                        <a class="btn" href="/donate/funding">Your Gifts</a>
+                        <a class="btn" href="/donate/time">Your Time</a>
+                        <a class="btn" href="/donate/furnishing">Your Furniture</a>
                     </menu>
                 </div>
 
@@ -45,9 +45,9 @@ description: hearts+homes
                     <div class="btn trigger" tabindex="0">Gallery</div>
                     <h5 class="label mobile">Gallery</h5>
                     <menu>
-                        <a class="btn" href="/gallery">Installations</a>
-                        <a class="btn" href="/gallery">Reveals</a>
-                        <a class="btn" href="/gallery">Volunteers</a>
+                        <a class="btn" href="/gallery/installations">Installations</a>
+                        <a class="btn" href="/gallery/reveals">Reveals</a>
+                        <a class="btn" href="/gallery/volunteers">Volunteers</a>
                     </menu>
                 </div>
 
@@ -66,11 +66,11 @@ description: hearts+homes
         </main>
 
         <footer>
-            <a class="btn primary" href="/time">Donate Time</a>
-            <a class="btn secondary" href="/furnishing">Donate Furnishings</a>
-            <a class="btn tertiary" href="/funding">Donate Funding</a>
+            <a class="btn primary" href="/donate/time">Donate Time</a>
+            <a class="btn secondary" href="/donate/furnishing">Donate Furnishings</a>
+            <a class="btn tertiary" href="/donate/funding">Donate Funding</a>
         </footer>
     </body>
 
-    <script src="/bundle.js"></script>
+    <script src="/js/index.js" type="module"></script>
 </html>

@@ -1,0 +1,161 @@
+/* H+H Custom Design */
+
+:root {
+	/* color palette */
+	--white: #fff;
+	--light: #fdfcfb;
+	--dark: #23232a;
+	--primary-light: #7474c1;
+	--primary: #6262b2;
+	--primary-dark: #535393;
+	--secondary-light: #ae6fae;
+	--secondary: #9f609f;
+	--secondary-dark: #7f537f;
+	--accent: #d9e7ca;
+
+	/* sizing */
+	--header-height: 48px;
+	--footer-height: 48px;
+	--layout-margin: 32px;
+	--layout-padding: 16px;
+}
+
+
+body {
+	font-family: Calibri, sans-serif;
+	background-color: var(--light);
+	color: var(--dark);
+	font-size: 18px;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+h2 {
+	color: var(--primary);
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+h4 {
+	color: var(--primary);
+	font-size: 1.125em;
+	font-weight: 700;
+}
+
+h5 {
+	color: var(--primary);
+	font-weight: 700;
+}
+
+em {
+	color: var(--primary);
+}
+
+b {
+	font-weight: 700;
+}
+
+i {
+	font-style: italic;
+}
+
+q {
+	line-height: 1.5em;
+	font-style: italic;
+}
+
+ul {
+	padding-left: 2em;
+	list-style: inside;
+}
+
+li {
+	line-height: 1.5em;
+}
+
+.btn {
+	border-radius: 3px;
+	padding: 8px 16px;
+	text-decoration: none;
+	color: var(--dark);
+}
+
+.btn:visited {
+	color: inherit;
+}
+
+.btn:hover,
+.btn:focus {
+	color: var(--primary-dark);
+}
+
+.btn:focus-visible {
+	outline: 2px solid var(--primary);
+}
+
+.btn.primary {
+	background-color: var(--primary);
+	color: #fff;
+}
+
+.btn.primary:hover {
+	background-color: var(--primary-dark);
+}
+
+.btn.primary:active {
+	background-color: var(--primary-light);
+}
+
+.btn.secondary {
+	background-color: var(--secondary);
+	color: #fff;
+}
+
+.btn.secondary:hover {
+	background-color: var(--secondary-dark);
+}
+
+.btn.secondary:active {
+	background-color: var(--secondary-light);
+}
+
+.btn.secondary:focus-visible {
+	outline: 2px solid var(--secondary);
+}
+
+.btn.tertiary:hover {
+	color: var(--dark);
+	background-color: var(--accent);
+}
+
+.btn.tertiary:active {
+	text-decoration: underline;
+}
+
+.btn.tertiary:focus-visible {
+	outline: 2px solid var(--dark);
+	background-color: var(--accent);
+	color: var(--dark);
+}
+
+.row {
+	display: flex;
+	gap: 32px;
+	margin: 8px
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.card {
+	background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+}

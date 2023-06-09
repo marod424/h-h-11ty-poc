@@ -1,12 +1,15 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/img");
-  eleventyConfig.addPassthroughCopy("src/bundle.css");
-  eleventyConfig.addPassthroughCopy("src/bundle.js");
+  eleventyConfig.addPassthroughCopy({
+    "src/js": "js",
+    "src/style": "style",
+    "src/img": "img"
+  });
 
   return {
     dir: {
-      input: "src",
-      output: "dist"
+      input: "src/content",
+      includes: "../_includes",
+      output: "dist",
     }
   }
 };

@@ -1,0 +1,108 @@
+/* Mobile */
+
+header .mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.row {
+		flex-wrap: wrap;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	header nav.mobile {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 32px;
+		background: var(--white);
+		border-radius: 8px;
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+		transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+
+	header nav.mobile.open {
+		transform: translateY(0);
+	}
+
+	header nav.mobile:not(.open) {
+		transform: translateY(-100%);
+	}
+
+	header nav.mobile .label.mobile {
+		display: flex;
+	}
+
+	header nav.mobile .menu-group {
+		display: flex;
+		flex-direction: column;
+	}
+
+	header nav.mobile .menu-group menu,
+	header nav.mobile .menu-group:hover menu,
+	header nav.mobile .menu-group:focus-within menu {
+		display: flex;
+		position: revert;
+		flex-direction: column;
+		gap: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	header .btn.trigger {
+		display: none;
+	}
+
+	header .nav-toggle {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border-radius: 20px;
+		padding: 13px 12px 14px;
+		height: 13px;
+		width: 16px;
+		z-index: 1;
+	}
+
+	header .nav-toggle .bar {
+		height: 1px;
+		width: 100%;
+		border-radius: 1px;
+		background-color: var(--dark);
+		transition: all 0.1s ease-in-out;
+	}
+
+	header .nav-toggle:hover {
+		cursor: pointer;
+	}
+
+	header .nav-toggle:hover .bar,
+	header .nav-toggle:focus .bar {
+		background-color: var(--primary-dark);
+	}
+
+	header .x:nth-of-type(1) {
+		transition: all 0.1s ease-in-out;
+		transform: translateX(3px) translateY(1px) rotate(45deg);
+		transform-origin: top left;
+	}
+
+	header .x:nth-of-type(2) {
+		transition: all 0.1s ease-in-out;
+		transform-origin: center;
+		width: 0;
+	}
+
+	header .x:nth-of-type(3) {
+		transition: all 0.1s ease-in-out;
+		transform: translateX(3px) rotate(-45deg);
+		transform-origin: bottom left;
+	}
+}

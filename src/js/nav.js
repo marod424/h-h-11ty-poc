@@ -1,6 +1,6 @@
-(function () {
-    'use strict';
+import { debounce } from './util.js';
 
+export default (function() {
     let nav = document.querySelector('#nav');
     let navBtns = document.querySelectorAll('#nav .btn');
     let navToggle = document.querySelector('#nav-toggle');
@@ -26,21 +26,7 @@
             isMobile ? nav.classList.add('mobile') : nav.classList.remove('mobile');
             nav.classList.remove('open');
             navBtns.forEach(btn => btn.tabIndex = isMobile ? -1 : 0);
-        }
-    }
-
-    function debounce(func, wait) {
-        let timeout;
-
-        return function () {
-            const context = this;
-            const args = arguments;
-
-            clearTimeout(timeout);
-
-            timeout = setTimeout(() => {
-                func.apply(context, args);
-            }, wait);
+            bars.forEach(bar => bar.classList.remove('x'))
         }
     }
 
@@ -50,5 +36,4 @@
     });
 
     window.addEventListener('resize', debounce(handleResponsiveLayout, 300));
-}());
-
+})();
